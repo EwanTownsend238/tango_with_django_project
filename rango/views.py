@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
+from django.conf import settings
 
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Rango says hey there partner! - <a href='/rango/about/'>About</a>")
+    context_dict = {"boldmessage" : "Crunchy, creamy, cookie, candy, cupcake!"}
+    return render(request, "rango/index.html", context=context_dict)
 
 def about(request):
-    return HttpResponse("This is the about page! - <a href='/rango/'>Index</a>")
+    context_dict = {'MEDIA_URL': settings.MEDIA_URL}
+    return render(request, "rango/about.html", context=context_dict)
