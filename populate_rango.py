@@ -9,20 +9,20 @@ def populate():
     #create list of dictionaries containing the pages and their details
 
     python_pages = [
-        {"title" : "Official Python Tutorial", "url" : "http://docs.python.org/3/tutorial/"},
-        {"title" : "How To Think Like A Computer Scientist", "url" : "http://www.greenteapress.com/thinkpython/"},
-        {"title" : "Learn Python in 10 Minutes", "url" : "http://www/korokithakis.net/tutorials/python/"},
+        {"title" : "Official Python Tutorial", "url" : "http://docs.python.org/3/tutorial/", "views" : 56723},
+        {"title" : "How To Think Like A Computer Scientist", "url" : "http://www.greenteapress.com/thinkpython/", "views" : 271},
+        {"title" : "Learn Python in 10 Minutes", "url" : "http://www/korokithakis.net/tutorials/python/", "views" : 123},
     ]
 
     django_pages = [
-        {"title" : "Official Django Tutorial", "url" : "https://docs.djangoproject.com/en/2.1/intro/tutorial01/"},
-        {"title" : "Django Rocks", "url" : "http://djangorocks.com/"},
-        {"title" : "How To Tango With Django", "url" : "http://www.tangowithdjango.com/"}
+        {"title" : "Official Django Tutorial", "url" : "https://docs.djangoproject.com/en/2.1/intro/tutorial01/", "views" : 5612},
+        {"title" : "Django Rocks", "url" : "http://djangorocks.com/", "views" : 1337},
+        {"title" : "How To Tango With Django", "url" : "http://www.tangowithdjango.com/", "views" : 4567},
     ]
 
     other_pages = [
-        {"title" : "Bottle", "url" : "http://bottlepy.orgs/docs/dev"},
-        {"title" : "Flask", "url" : "http://flask.pocoo.org"}
+        {"title" : "Bottle", "url" : "http://bottlepy.orgs/docs/dev", "views" : 67},
+        {"title" : "Flask", "url" : "http://flask.pocoo.org", "views" : 12}
     ]
 
 
