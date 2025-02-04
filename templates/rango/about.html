@@ -9,6 +9,7 @@
         {% block body_block %}
             This is the about page! <br />
             <strong>{{ boldmessage }}</strong>
+            <p>Number of times visiting Rango: {{ visits }}</p>
             
             <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" /> <br />
             <img src="{{ MEDIA_URL }}cat.jpg" alt="picture of a cat"/>
