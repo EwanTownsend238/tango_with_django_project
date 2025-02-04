@@ -19,6 +19,7 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = [STATIC_DIR]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+LOGIN_URL = 'rango:login'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -94,6 +95,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        "OPTIONS" : {"min_length": 6},
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
